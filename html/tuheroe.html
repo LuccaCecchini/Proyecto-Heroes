@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-tuheroe.css">
+    <title>Crea tu Heroe</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <section class="avisoheader">
+            <p>20% de descuento en todos los productos!</p>
+        </section>
+        <section class="tituloheader">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="Logo">
+                <h1>Heroes Card Collectables</h1>
+            </a>
+        </section>
+        <section class="menuheader">
+            <a href="contact.html">Contacto</a>
+            <a href="register.html">Registrarme</a>
+            <a href="login.html">Ingresar</a>
+        </section>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <h2>Añadí tu super!</h2>
+        <span>Agregá tu personaje favorito completando las opciones.</span>
+        <form action="">
+            <!-- COLUMNA -->
+                <div class="column">
+                    <label for="nombre">Nombre</label>
+                    <input class="size" type="text" name="nombre" id="nombre">
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input class="size" type="date" name="fecha" id="fecha">
+                    <textarea id="column1" name="descripcion" id="descripcion" cols="30" rows="10"
+                        placeholder="Descripción"></textarea>
+                </div>
+                <!-- COLUMNA -->
+                <div class="column">
+                    <label for="especie">Especie</label>
+                    <select class="size" name="especie" id="*Especie">
+                        <option hidden selected>Especie</option>
+                        <option value="humano">Humano</option>
+                        <option value="dios">Deidad</option>
+                        <option value="alienigena">Alienigena</option>
+                        <option value="demonio">Demonio</option>
+                    </select>
+                    <label for="foto">Foto de Perfil</label>
+                    <input class="size" type="file" name="foto" id="foto">
+                    <article class="check">
+                        <label for="check">Poderes</label>
+                        <label for="check" class="aa"><input type="checkbox"  value="Volar" name="poderes">Volar</label>
+                        <label for="check" class="aa"><input type="checkbox"  value="Superinteligencia" name="poderes">Super Inteligencia</label>
+                        <label for="check" class="aa"><input type="checkbox" value="Vista de Rayo Láser" name="poderes">Vista de rayo láser</label>
+                        <label for="check" class="aa"><input type="checkbox"  value="Billetera Gorda" name="poderes">Billetera Grande</label>
+                        <hr>
+                        <label for="radio">Tipo de Personaje</label>
+                        <label for="radio" class="aa"><input type="radio" class="radio" value="">Heroe/Heroína</label>
+                        <label for="radio" class="aa"><input type="radio" class="radio" value="">Villano/Villana</label>
+                    </article>
+                </div>
+        </form>
+        <button>Añadir</button>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <p>Todos los derechos reservador a FRONT END 1</p>
+    </footer>
+</body>
+
+</html>

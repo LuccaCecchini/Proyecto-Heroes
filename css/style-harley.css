@@ -1,0 +1,191 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+/* Header */
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.avisoheader {
+    background-color:#1CD1B0;
+}
+
+.avisoheader p {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.tituloheader {
+    background-color: #00669F;
+    display: flex;
+    align-items: center;
+}
+
+.tituloheader img {
+    padding: 0.5rem;
+}
+
+.tituloheader h1 {
+    color: white;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+/* MAIN */
+
+.harleymain {
+    background-image: url('../img/harleyback.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.batmanmain {
+    background-image: url('../img/batmanback.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.harleyprofile {
+    background-color: #F3F3F3;
+    width: 50rem;
+    height: 30rem;
+    border-radius: 3rem 3rem;
+    margin-top: 7rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: relative;
+}
+
+.like {
+    width: 3rem;
+    position: absolute;
+    left: 2rem;
+    top: 4rem;
+}
+
+.foto {
+    width: 15rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -7rem;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.botonvolver {
+    background-color: #2C0187;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    width: 100%;
+    height: 4rem;
+    border-radius: 0 0 3rem 3rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background-color: #00669F;  
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    bottom: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width:1000px) {
+    *{
+        font-size: 14px;
+    }
+
+    .descripcion h2{
+        font-size: 3rem;
+    }
+
+    .descripcion p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width:760px) {
+    *{
+        font-size: 12px;
+    }
+    .foto {
+        top: -9rem;
+    }
+}
+
+@media (max-width:630px) {
+    *{
+        font-size: 8px;
+    }
+
+    .harleyprofile {
+        height: 40rem;
+    }
+
+    .descripcion h2{
+        font-size: 5rem;
+    }
+    
+    .descripcion p {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width:420px) {
+    *{
+        font-size: 6px;
+    }
+    .harleyprofile {
+        height: 60rem;
+    }
+    .foto {
+        width: 20rem;
+    }
+    .descripcion h2{
+        font-size: 7rem;
+    }
+    .descripcion p {
+        font-size: 2rem;
+    }
+}
+
+
+
+

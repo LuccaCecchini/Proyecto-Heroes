@@ -1,0 +1,163 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+/* Header */
+
+.avisoheader {
+    background-color:#1CD1B0;
+}
+
+.avisoheader p {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.tituloheader {
+    background-color: #00669F;
+    display: flex;
+    align-items: center;
+}
+
+.tituloheader img {
+    padding: 0.5rem;
+}
+
+.tituloheader h1 {
+    color: white;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.menuheader {
+    background-color: #001D2D;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0rem 0.5rem 0.5rem grey;
+}
+
+.menuheader a {
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem 2rem;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cartas {
+    width: 30rem;
+    height: 38rem;
+    margin: 5rem;
+    
+    box-shadow: 0rem 0.5rem 0.5rem grey;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: relative;
+}
+
+#fondobatman {
+    background-image: url('../img/batmanback.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 1rem 1rem;
+}
+
+#fondoharley {
+    background-image: url('../img/harleyback.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 1rem 1rem;
+}
+
+.like {
+    width: 3rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.foto {
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.cartas article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cartas article h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cartas article p {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.botonvermas {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #00669F;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    box-shadow: 0rem 0.2rem 0.2rem grey;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: #00669F;  
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0rem;
+}
+
+@media (max-width:1200px) {
+    *{
+        font-size: 12px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:800px) {
+    *{
+        font-size: 12px;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:480px) {
+    *{
+        font-size: 10px;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+}
